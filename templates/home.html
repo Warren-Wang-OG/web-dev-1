@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Catgirl Hooters</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+    <style>
+        #banner {
+            height: 300;
+            object-fit: cover;
+        }
+        #center_maid{
+            text-align: center;
+            object-fit: cover;
+        }
+    </style>
+    </head>
+    
+    <body>
+    <div class="container">
+        <h1 class="text-center mt-2 mb-4">Catgirl Hooters</h1>
+        <img class="img-fluid" id="banner" src="https://web-dev-1-1.warrenwang2.repl.co/static/banner.jpg">
+        <h2 class="text-center mt-2 mb-4" style="object-fit: cover;" >About Catgirl Hooters</h2>
+        <img class="rounded mx-auto d-block" src="https://web-dev-1-1.warrenwang2.repl.co/static/catgirl_maid.jpg">
+        <p>You just need to be a cute fluffy catgirl who knows how to deal with customers of all types. Please do not scratch our knock over valuable customer posessions. We would like to stay in business and keep good relations with our community customers. </p>
+
+        <h2 class="text-center mt-2 mb-4">Open Positions</h2>
+        <div class="accordion mb-4">
+            {% for job in jobs %}
+                {% include 'jobitem.html' %}
+            {% endfor %}
+        </div>
+        
+
+        <button type="button" class="btn btn-info mb-4">Contact Us</button>
+
+        <p> Copyright 2022, NyaNyaMF</p>
+    </div>
+    </body>
+</html>

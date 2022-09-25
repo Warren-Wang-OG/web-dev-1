@@ -1,0 +1,22 @@
+<div class="accordion-item">
+    <h2 class="accordion-header" id="#{{job['id_string']}}">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#{{job['id_string']}}" aria-expanded="true" aria-controls="{{job['id_string']}}">
+        {{job['title']}}
+      </button>
+    </h2>
+    <div id="{{job['id_string']}}" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body row">
+            <div class="col align-self-start">
+            Salary: {{job['salary']}} <br>
+            Requirements: {{job['requirements']}} <br>
+            Number of Positions open: {{job['num']}} <br>
+            Job Description: {{job['description']}}<br>
+            </div>
+            <div class="col align-self-end">
+            <button type="button mt-2 mb-2" class="btn btn-dark">Apply</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
